@@ -20,6 +20,7 @@ ss+v2ray-plugin缺点：
 使用方法：  
 先去ZeroSSL.com申请一个免费的IP证书  
 安装NGINX：apt install nginx -y
+
 然后下载sssm.sh，创建一个/home/sssm目录，把sssm.sh放进去，然后使用root运行。  
 ```
 mkdir /home/sssm && wget --no-check-certificate -q -O /home/sssm/sssm.sh "https://github.com/sonypc/sssm/raw/main/sssm.sh" && chmod +x /home/sssm/sssm.sh && bash /home/sssm/sssm.sh
