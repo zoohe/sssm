@@ -436,7 +436,7 @@ generate_nginx_conf() {
     cat "${nginx_conf_file}" | grep -q "${dir}/sssm_nginx_vhost.conf"
     [ $? -eq 1 ] && sed -i "/http {/a\include ${dir}/sssm_nginx_vhost.conf;" "${nginx_conf_file}"
     
-    if [ "${nginx_conf_file}" = "/www/server/nginx/conf/nginx.conf"]; then
+    if [ "${nginx_conf_file}" = "/www/server/nginx/conf/nginx.conf" ]; then
     sed -i "/access_log off;/a \		include ${dir}/sssm_nginx_vhost.conf;" "${nginx_conf_file}"
     fi
 
